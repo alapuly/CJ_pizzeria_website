@@ -1,0 +1,281 @@
+::selection {
+    background-color: rgba(223, 94, 94);
+    color: #ffffff;
+}
+
+img::selection,
+.button::selection {
+    background-color: rgba(79, 79, 79, 0.532);
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* LIST */
+
+ul,
+a {
+    list-style: none;
+    text-decoration-line: none;
+}
+
+header a,
+footer a {
+    color: #ffffff;
+}
+
+/* TITLES */
+
+h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 48px;
+}
+
+.title h2:nth-child(1) {
+    padding-right: 5em;
+}
+
+.title h2:nth-child(2) {
+    padding-left: 5em;
+}
+
+.intro_news h3,
+.pink {
+    color: #DF5E5E;
+}
+
+.green {
+    color: #009A96;
+}
+
+.white {
+    color: #ffffff;
+}
+
+/* BUTTONS */
+
+.white_button {
+    color: #DF5E5E;
+    background-color: #FFF8E5;
+}
+
+.pink_button {
+    background-color: #DF5E5E;
+    color: #ffffff;
+}
+
+.green_button {
+    background-color: #009A96;
+    color: #ffffff;
+}
+
+/* ROUND ELEMENTS*/
+
+.button,
+.intro_news article,
+.comment_bubble,
+li>a {
+    border-radius: 2em;
+    border: none;
+    padding: 0.7em;
+}
+
+/* FLEX */
+
+header ul,
+.intro_about,
+.intro_news,
+.homemade_wrapper_1,
+.homemade_wrapper_2,
+.avis,
+.delivery_wrapper,
+.delivery_partners,
+footer ul {
+    display: flex;
+}
+
+/* ________________________________________________ */
+/* ________________________________________________ */
+/* ________________________________________________ */
+
+
+/* HEADER */
+
+header {
+    background-color: #DF5E5E;
+    color: #ffffff;
+    padding: 0.3em;
+}
+
+.header_logo img {
+    height: 4em;
+}
+
+header ul {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact_button {
+    float: right;
+}
+
+/* MAIN */
+
+section {
+    padding: 2em;
+}
+
+.main_intro {
+    background-image: url(../images/bg/CJ_intro_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_logo img {
+    display: block;
+    margin: auto;
+    width: 15em;
+}
+
+.intro_news,
+.about_p,
+.main_homemade,
+.main_delivery {
+    text-align: center;
+}
+
+.intro_news article {
+    background-color: #FFF8E5;
+    padding: 4em 2em;
+    margin: 3em;
+}
+
+.about_wrapper_1,
+.about_wrapper_2 {
+    margin:1em;
+    width: 50%;
+}
+
+.about_wrapper_2 img,
+.border_pic {
+    border-radius: 50%;
+}
+
+.about_wrapper_2 img {
+    width: 10em;
+    height: 10rem;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+
+.border_pic {
+    width: 12em;
+    height: 12em;
+    border: #ffffff solid 5px;
+}
+
+.main_homemade {
+    background-image: url(../images/bg/CJ_homemade_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avis {
+    background-color: #FFB345;
+    padding: 2em 4em;
+}
+
+.avis_user {
+    padding: 0 4em;
+}
+
+.comment_bubble p {
+    padding: 1em;
+}
+
+.comment_userpic img {
+    width: 10em;
+    height: 10rem;
+}
+
+.comment_userpic img {
+    border-radius: 50%;
+}
+
+.comment_bubble {
+    margin: 1em;
+    padding: 1em 0;
+    background: #ffffff;
+    position: relative;
+}
+
+/*BUBBLE TRIANGLE */
+.comment_bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+
+.delivery_wrapper {
+    justify-content: space-evenly;
+}
+
+.delivery_partners img {
+    width: 5em;
+    margin: 2em;
+}
+
+.main_delivery button {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #009A96;
+    padding: 1em 0;
+}
+
+footer ul,
+footer li {
+    justify-content: center;
+    padding: 0 3em;
+}
+
+/* ______________________________________________________ */
+
+/* TRANSITION */
+.button,
+li>a {
+    transition: 0.5s;
+}
+
+/* HOVER/FOCUS */
+header li>a:hover,
+header li>a:focus,
+.white_button:hover,
+.white_button:focus,
+.pink_button:hover,
+.pink_button:focus {
+    background-color: #841A1A;
+    color: #ffffff;
+}
+
+.green_button:hover,
+.green_button:focus,
+footer li>a:hover,
+footer li>a:focus {
+    background-color: #00615e;
+}
