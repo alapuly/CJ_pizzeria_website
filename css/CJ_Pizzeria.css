@@ -33,6 +33,7 @@ footer a {
 h2 {
     font-family: 'Ephesis', cursive;
     font-size: 48px;
+    margin: 0;
 }
 
 .title h2:nth-child(1) {
@@ -112,7 +113,7 @@ header {
 }
 
 .header_logo img {
-    height: 4em;
+    height: 3em;
 }
 
 header ul {
@@ -127,7 +128,7 @@ header ul {
 /* MAIN */
 
 section {
-    padding: 2em;
+    padding: 3em;
 }
 
 .main_intro {
@@ -136,14 +137,19 @@ section {
     background-size: cover;
 }
 
-.intro_logo img {
+.intro_logo1 img,
+.intro_logo2 img {
     display: block;
     margin: auto;
-    width: 15em;
+    width: 20em;
+}
+
+.intro_logo2 img {
+    width: 10em;
 }
 
 .intro_news,
-.about_p,
+.intro_about,
 .main_homemade,
 .main_delivery {
     text-align: center;
@@ -151,14 +157,30 @@ section {
 
 .intro_news article {
     background-color: #FFF8E5;
-    padding: 4em 2em;
-    margin: 3em;
+    padding: 2em 4em;
+    margin: 4em 2em;
+}
+
+.intro_news p,
+.about_wrapper_1 p {
+    margin: 2em 0;
+}
+
+.intro_about {
+    padding-top: 10em;
 }
 
 .about_wrapper_1,
-.about_wrapper_2 {
-    margin:1em;
-    width: 50%;
+.about_wrapper_2,
+.homemade_wrapper_1,
+.homemade_wrapper_2,
+.homemade_wrapper_2 p {
+    padding: 0 10%;
+    margin: auto;
+}
+
+.about_wrapper_1 p {
+    padding: 0 5em;
 }
 
 .about_wrapper_2 img,
@@ -171,7 +193,6 @@ section {
     height: 10rem;
     position: relative;
     top: 1em;
-    left: 1em;
 }
 
 .border_pic {
@@ -186,6 +207,14 @@ section {
     background-size: cover;
 }
 
+.main_homemade>h2 {
+    margin: 1em 0;
+}
+
+.main_homemade {
+    padding-bottom: 0;
+}
+
 .avis {
     background-color: #FFB345;
     padding: 2em 4em;
@@ -195,16 +224,18 @@ section {
     padding: 0 4em;
 }
 
-.comment_bubble p {
+.comment_bubble p,
+.comment_userpic img {
     padding: 1em;
 }
 
-.comment_userpic img {
-    width: 10em;
-    height: 10rem;
+.comment_userpic {
+    padding-left: 1.5em;
 }
 
 .comment_userpic img {
+    width: 5em;
+    height: 5rem;
     border-radius: 50%;
 }
 
@@ -235,9 +266,8 @@ section {
     margin: 2em;
 }
 
-.main_delivery button {
-    margin: 0;
-    padding: 0;
+.main_delivery a {
+    margin: 4em;
 }
 
 
