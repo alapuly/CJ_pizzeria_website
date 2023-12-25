@@ -62,7 +62,7 @@ h2,
 
 /* BUTTONS */
 
-.white_button{
+.white_button {
     background-color: #FFF8E5;
     color: #DF5E5E;
 }
@@ -71,7 +71,7 @@ h2,
 input {
     background-color: #DF5E5E;
     color: #ffffff;
-    border:none;
+    border: none;
 }
 
 .green_button {
@@ -117,8 +117,8 @@ header {
     background-color: #DF5E5E;
     color: #ffffff;
     padding: 0.3em;
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
 
@@ -302,6 +302,8 @@ li>a {
 /* HOVER/FOCUS */
 header li>a:hover,
 header li>a:focus,
+nav li>a:hover,
+nav li>a:focus,
 .white_button:hover,
 .white_button:focus,
 .pink_button:hover,
@@ -310,6 +312,7 @@ input:hover,
 input:focus {
     background-color: #841A1A;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .green_button:hover,
