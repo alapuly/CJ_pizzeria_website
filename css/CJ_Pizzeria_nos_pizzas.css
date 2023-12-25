@@ -1,0 +1,81 @@
+hr {
+    margin: 0 20em;
+    border: black 1px dashed;
+}
+
+header {
+    position: initial;
+}
+
+
+.main_nav :nth-child(3) {
+    background-color: #841A1A;
+    color: #ffffff;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #FF9797;
+    padding: 0.5em 6em;
+}
+
+.sub_nav a {
+    color: #000000;
+    background-color: #FFF8E5;
+    margin: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*MAIN*/
+
+.pizzas ul,
+.pizzas li {
+    display: grid;
+}
+
+.pizzas li {
+    background-color: #FFF8E5;
+    text-align: center;
+    margin: 2em;
+}
+
+.pizzas img {
+    width: 100%;
+}
+
+.new_pizzas ul {
+    grid-template-columns: 1fr 1fr;
+}
+
+.new_pizzas .img {
+    height: 300px;
+    overflow: hidden;
+}
+
+.nos_pizzas ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title,
+.descr,
+.option_button,
+.add_button {
+    padding: 0.5em;
+}
+
+input,
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0;
+    width:100%;
+    text-align: center;
+}
