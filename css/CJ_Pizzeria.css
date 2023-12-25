@@ -30,11 +30,14 @@ footer a {
 
 /* TITLES */
 
-h2 {
+h2,
+.title {
     font-family: 'Ephesis', cursive;
     font-size: 48px;
     margin: 0;
+    text-align: center;
 }
+
 
 .title h2:nth-child(1) {
     padding-right: 5em;
@@ -59,14 +62,16 @@ h2 {
 
 /* BUTTONS */
 
-.white_button {
-    color: #DF5E5E;
+.white_button{
     background-color: #FFF8E5;
+    color: #DF5E5E;
 }
 
-.pink_button {
+.pink_button,
+input {
     background-color: #DF5E5E;
     color: #ffffff;
+    border:none;
 }
 
 .green_button {
@@ -79,7 +84,8 @@ h2 {
 .button,
 .intro_news article,
 .comment_bubble,
-li>a {
+li a,
+.main_nav li {
     border-radius: 2em;
     border: none;
     padding: 0.7em;
@@ -88,6 +94,7 @@ li>a {
 /* FLEX */
 
 header ul,
+nav ul,
 .intro_about,
 .intro_news,
 .homemade_wrapper_1,
@@ -110,6 +117,9 @@ header {
     background-color: #DF5E5E;
     color: #ffffff;
     padding: 0.3em;
+    position:sticky;
+    top:0;
+    z-index: 1;
 }
 
 .header_logo img {
@@ -119,10 +129,6 @@ header {
 header ul {
     align-items: center;
     justify-content: space-around;
-}
-
-.contact_button {
-    float: right;
 }
 
 /* MAIN */
@@ -288,6 +294,7 @@ footer li {
 
 /* TRANSITION */
 .button,
+input,
 li>a {
     transition: 0.5s;
 }
@@ -298,7 +305,9 @@ header li>a:focus,
 .white_button:hover,
 .white_button:focus,
 .pink_button:hover,
-.pink_button:focus {
+.pink_button:focus,
+input:hover,
+input:focus {
     background-color: #841A1A;
     color: #ffffff;
 }
