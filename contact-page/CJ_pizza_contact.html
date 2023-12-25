@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="icon" href="../images/logo/brand/logo_pizza.png">
+    <link rel="stylesheet" href="../css/CJ_Pizzeria.css">
+    <link rel="stylesheet" href="../css/CJ_Pizzeria_contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul class="main_nav">
+            <li>
+                <div class="header_logo">
+                    <a href="../home-page/CJ_pizza_accueil.html">
+                        <img src="../images/logo/brand/logo_pizza.png" alt="Logo de pizza">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Qui sommes-nous ?</a>
+                <!--TO DO: link -->
+            </li>
+            <li>
+                <a href="../pizza-page/CJ_menu_pizza.html">Nos pizzas</a>
+            </li>
+            <li>
+                <a href="../pizza-page/CJ_menu_pizza.html">Commander</a>
+                <!-- lien -->
+            </li>
+            <li>
+                <a href="../contact-page/CJ_pizza_contact.html" class="button white_button">
+                    Nous contacter
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 class="epilogue">CONTACT</h2>
+        <div class="form_n_details">
+            <div class="form">
+                <form>
+                    <h2 class="epilogue">Formulaire de contact</h2>
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Nom</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="email">Adresse e-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <select name="subject" id="subject">
+                        <option value="">Sujet</option>
+                        <option value="order">Problème avec une commande</option>
+                        <option value="payment">Problème de paiement en ligne</option>
+                        <option value="website">Problème technique avec le site web</option>
+                        <option value="info">Demande d'informations</option>
+                        <option value="comment">Suggestions d'amélioration</option>
+                        <option value="else">Autres</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" cols="50"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <div class="contact_details">
+                <h2 class="epilogue">Coordonnées</h2>
+                <h3 class="underline pink">Numéro de téléphone</h3>
+                01 23 45 56 78
+                <h3 class="underline pink">Horaires d'ouverture</h3>
+                Lundi / Mardi : 12h-14h <br>Mercredi : Fermé <br>Jeudi/Vendredi : 12h-14h <br>Samedi : 19h-23h
+                <br>Dimanche : Fermé
+                <div class="socmed">
+                    <img src="../images/logo/socmed/fb.png" alt="Facebook">
+                    <img src="../images/logo/socmed/instagram.png" alt="Instagram">
+                    <img src="../images/logo/socmed/pinterest.png" alt="Pinterest">
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.5408995631005!2d2.3378320763073943!3d48.886027971335885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e44b0561fcd%3A0x1bf1bff82fcd69d3!2sRue%20du%20Calvaire%2C%2075018%20Paris!5e0!3m2!1sfr!2sfr!4v1703531036821!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <!--TO DO: link -->
+            <li><a href="#">Mentions légales</a></li>
+            <!--TO DO: link -->
+            <li> <a href="../contact-page/CJ_pizza_contact.html">Nous contacter</a></li>
+        </ul>
+    </footer>
