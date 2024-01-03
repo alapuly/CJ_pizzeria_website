@@ -4,12 +4,14 @@
 }
 
 img::selection,
-.button::selection {
+.button::selection,
+footer a::selection {
     background-color: rgba(79, 79, 79, 0.532);
 }
 
 html,
-body {
+body,
+.intro_news {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -68,7 +70,7 @@ h2,
 }
 
 .pink_button,
-input {
+input[type=submit] {
     background-color: #DF5E5E;
     color: #ffffff;
     border: none;
@@ -85,7 +87,10 @@ input {
 .intro_news article,
 .comment_bubble,
 li a,
-.main_nav li {
+.main_nav li,
+form,
+.form_n_details>div,
+.socmed {
     border-radius: 2em;
     border: none;
     padding: 0.7em;
@@ -102,6 +107,8 @@ nav ul,
 .avis,
 .delivery_wrapper,
 .delivery_partners,
+.form_n_details,
+.socmed,
 footer ul {
     display: flex;
 }
@@ -129,6 +136,33 @@ header {
 header ul {
     align-items: center;
     justify-content: space-around;
+}
+
+/*BURGER MENU*/
+
+.mobile {
+    display: none;
+}
+
+.hamburger-button {
+    background-color: #DF5E5E;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: none;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
 }
 
 /* MAIN */
@@ -295,6 +329,8 @@ footer li {
 /* TRANSITION */
 .button,
 input,
+select,
+textarea,
 li>a {
     transition: 0.3s;
 }
@@ -308,8 +344,8 @@ nav li>a:focus,
 .white_button:focus,
 .pink_button:hover,
 .pink_button:focus,
-input:hover,
-input:focus {
+input[type=submit]:hover,
+input[type=submit]:focus {
     background-color: #841A1A;
     color: #ffffff;
     cursor: pointer;
@@ -320,4 +356,77 @@ input:focus {
 footer li>a:hover,
 footer li>a:focus {
     background-color: #00615e;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 480px) {
+
+    html,
+    body {
+        width: 100%;
+    }
+
+
+    .main_nav {
+        display: none;
+    }
+
+    .burger-links a {
+        position: relative;
+        display: block;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .burger-icon,
+    .intro_news,
+    .intro_about,
+    .about_wrapper_2,
+    .main_homemade,
+    .homemade_wrapper_1,
+    .homemade_wrapper_2,
+    .avis,
+    .delivery_wrapper,
+    footer>ul,
+    footer li {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .title>* {
+        display: inline;
+        font-size: 31px;
+    }
+
+    .intro_news article:not(article:nth-child(1)),
+    .avis article:not(article:nth-child(1)) {
+        display: none;
+    }
+
+    .intro_about {
+        margin-top: 10em;
+    }
+
+    .about_wrapper_2 {
+        margin:2em 6em;
+    }
+    
+    .main_intro,
+    .avis_username,
+    .main_delivery,
+    .delivery_wrapper {
+        padding: 1em 0;
+    }
+
+
+    .delivery_partners img{
+        margin:1em;
+        padding: 0.5em;
+    }
+    
+    footer {
+       margin-top: 1em;
+       text-align: center;
+   }
 }
