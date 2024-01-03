@@ -18,7 +18,7 @@ nav {
     top: 0;
     z-index: 1;
     background-color: #FF9797;
-    padding: 0.5em 6em;
+    padding: 0.5em 1em;
 }
 
 .sub_nav a {
@@ -78,4 +78,63 @@ select {
     padding: 0.5em 0;
     width: 100%;
     text-align: center;
+}
+
+.pizzas>a {
+        display: block;
+        margin: 0 40%;
+    }
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        width: 100%;
+    }
+
+    nav {
+        padding: auto 1em;
+    }
+
+    .sub_nav a {
+        margin: 0;
+        padding: 1em;
+    }
+
+    .new_pizzas .img {
+        height: 120px;
+    }
+
+    .nos_pizzas ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        padding: auto 0.1em;
+    }
+
+    .sub_nav li {
+        margin: 0;
+        padding: 0.3em;
+    }
+
+    .new_pizzas .img {
+        height: 120px;
+    }
+
+    .pizzas ul {
+        display: block;
+        padding: 0;
+    }
+
+    .pizzas li:not(.pizzas li:nth-child(1), .pizzas li:nth-child(2), .pizzas li:nth-child(3), .pizzas li:nth-child(4)) {
+        display: none;
+    }
+
 }
