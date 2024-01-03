@@ -13,11 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <div class="burger-icon mobile">
+            <button class="hamburger-button pink_button button" onclick="uncover()"> ☰ </button>
+            <div class="burger-links">
+                <a class="pink_button button" href="#">Qui sommes-nous ?</a>
+                <a class="pink_button button" href="../pizza-page/CJ_menu_pizza.html">Nos pizzas</a>
+                <a class="pink_button button" href="../pizza-page/CJ_menu_pizza.html">Commander</a>
+                <a class="pink_button button" href="../contact-page/CJ_pizza_contact.html">Nous contacter</a>
+            </div>
+        </div>
         <ul class="main_nav">
             <li>
                 <div class="header_logo">
@@ -104,3 +114,9 @@
             <li> <a href="../contact-page/CJ_pizza_contact.html">Nous contacter</a></li>
         </ul>
     </footer>
+
+    <script src="../js/CJ_Pizzeria.js"></script>
+
+</body>
+
+</html>
