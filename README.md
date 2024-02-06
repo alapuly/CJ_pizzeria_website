@@ -1,6 +1,6 @@
-# CJ_pizzeria_website
+# CJ_pizzeria_website  
 
-## EN
+## EN  
 
 This repository contains the source code for a pizzeria website with the following pages:
 
@@ -9,7 +9,7 @@ This repository contains the source code for a pizzeria website with the followi
 + Contact Page: Provides contact information, address, operating hours, and a contact form.
 
 
-**Tech Stack**: HTML, CSS, JavaScript
+**Tech Stack**: HTML, CSS, JavaScript  
 
 
 ### Contributing:
@@ -19,7 +19,7 @@ Contributions are welcome! Please make sure you follow these guidelines:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Write clear and concise commit messages.
-4. Submit a pull request with a description of your changes.
+4. Submit a pull request with a description of your changes.    
 
 
 
@@ -32,7 +32,7 @@ Ce dépôt contient le code source du site web "CJ pizzeria" avec les pages suiv
 + Page de contact : Fournit les coordonnées, l'adresse, les heures d'ouverture et un formulaire de contact.
 
 
-**Langages utilisés/installés** : HTML, CSS, JavaScript
+**Langages utilisés/installés** : HTML, CSS, JavaScript  
 
 
 ### Contribution :
